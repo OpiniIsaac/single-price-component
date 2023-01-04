@@ -1,0 +1,85 @@
+:root{
+    /* ### Primary */
+
+--Cyan:hsl(179, 62%, 43%);
+--BrighYellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla';
+}
+.main{
+    display: grid;
+ height: 100vh;
+    justify-content: center;
+  align-content: center;
+  
+    grid-template: 'maintop maintop'
+                          'mainleft mainright'  ;
+}
+.mainTop{
+    grid-area: maintop;
+    padding: 20px;
+background-color: var(--LightGray);
+
+}
+.mainleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    grid-area: mainleft;
+    padding: 50px;
+}
+.mainright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: mainright;
+    padding: 50px;
+
+}
+
+.mainTop > h1{
+    color: var(--Cyan);
+    padding: 10px;
+}
+.mainTop > h3{
+    color: var(--BrighYellow);
+
+}
+.mainTop > p{
+    color: var(--GrayishBlue);
+padding: 20px;
+}
+.mainleft{
+    color: var(--LightGray);
+    display: grid;
+    background-color: var(--Cyan);
+}
+button{
+    border: 0;
+    background-color: var(--BrighYellow);
+    color: var(--LightGray);
+    border-radius: 5px;
+padding: 10px;
+cursor: pointer;
+}
+.mainright{
+    color: var(--LightGray);
+    background-color: var(--Cyan);
+
+}
+.mainright > h4{
+    padding-bottom: 20px;
+}
